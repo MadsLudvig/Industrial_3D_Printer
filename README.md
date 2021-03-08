@@ -1,4 +1,4 @@
-# BigAss3DPronter
+# 3D_PRINTER
 *__Big 3D printer made with industrial parts from injection molding machine__*
 
 ### Introduction
