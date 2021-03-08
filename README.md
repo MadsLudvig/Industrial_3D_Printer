@@ -60,7 +60,6 @@ Here a Sony QX1 will be mounted on the printer to monitor the printing process. 
 Here as said before the extruder is going to be moved in the X-axis and the bottom plate is going to be moved in the Y- and Z-axis. This is seen in Figure 5 below:
 
 ![3D-Printer-Axis](/md_attachments/3D-Printer-Axis.png)
-Format: ![Alt Text](url)
 
 *Figure 5: Here is seen an example of how the axis will look*
 
