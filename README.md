@@ -11,21 +11,21 @@ This is a 3D printer made with an extruder from an injection moulding machine an
 
 The motors are controlled by lenze servo controllers. All of the servo drives and the power management are already packed in a nice cabinet. This will be reused. Here the teensy will be sitting inside this cabinet. The model of the servo controllers is Lenze 9300. Here the X9 and X10 connectors will be used as seen here:
 
-![Lenze X9-X10](/Users/ml/Documents/GitHub/BigAss3DPronter/md_attachments/Lenze X9-X10.png)
+![Lenze X9-X10](/md_attachments/Lenze X9-X10.png)
 
 *Figure 1: Page 47 of lenze 9300 servodrive manual*
 
-*__Lenze manual:  [BA_9300_Register_control_EN.pdf](md_attachments/BA_9300_Register_control_EN.pdf)__*
+*__Lenze manual:  [BA_9300_Register_control_EN.pdf](/md_attachments/BA_9300_Register_control_EN.pdf)__*
 
 Here the X9 connector is digital frequency input. This input requires a TTL encoder signal. Then the servo drive will mimic this encoder signal. This way the drive can be controlled. So the Teensy 4.0 will input the Marlin stepper signals to this input. The plan is to have 4 outputs on the teensy that, so the X,Y,Z,W axisses can be controlled. Here the W axis is the motor that turns the extruder. Another nice feature this allows is that the servo drives can easily be daisy chained if multiple motors is needed per axis by connecting the X10 and X9. 
 
 To make connecting the inputs to the Teensy 4.0, a circuitboard is going to be made with 4 d-sub connectors. Here is the current state of the board drawing and schematic:
 
-![Current board state](/Users/ml/Documents/GitHub/BigAss3DPronter/md_attachments/Current board state.png)
+![Current board state](/md_attachments/Current board state.png)
 
 *Figure 2: Board*
 
-![Current schematic state](/Users/ml/Documents/GitHub/BigAss3DPronter/md_attachments/Current schematic state.png)
+![Current schematic state](/md_attachments/Current schematic state.png)
 
 *Figure 3: Here is seen a piece of the schematic*
 
@@ -33,7 +33,7 @@ As seen in figure 2, non-inverting- and inverting bus-trancievers are used to un
 
 The reason why the stepper output of Marlin can be connected directly to the TTL encoder signal of the X9 input is because the signals are identical as seen by comparing Figure 1 and Figure 4 below:
 
-![Stepper output](/Users/ml/Documents/GitHub/BigAss3DPronter/md_attachments/Stepper output.png)
+![Stepper output](/md_attachments/Stepper output.png)
 
 *Figure 4: Here is seen the stepper output marlin*
 
@@ -59,7 +59,7 @@ Here a Sony QX1 will be mounted on the printer to monitor the printing process. 
 
 Here as said before the extruder is going to be moved in the X-axis and the bottom plate is going to be moved in the Y- and Z-axis. This is seen in Figure 5 below:
 
-![3D-Printer-Axis](/Users/ml/Documents/GitHub/BigAss3DPronter/md_attachments/3D-Printer-Axis.png)
+![3D-Printer-Axis](/md_attachments/3D-Printer-Axis.png)
 
 *Figure 5: Here is seen an example of how the axis will look*
 
