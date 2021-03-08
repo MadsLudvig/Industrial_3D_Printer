@@ -1,4 +1,4 @@
-# Industrial_3D_Printer
+# Industrial 3D Printer
 *__Big 3D printer made with industrial parts from injection molding machine__*
 
 ### Introduction
