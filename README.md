@@ -11,7 +11,7 @@ This is a 3D printer made with an extruder from an injection moulding machine an
 
 The motors are controlled by lenze servo controllers. All of the servo drives and the power management are already packed in a nice cabinet. This will be reused. Here the teensy will be sitting inside this cabinet. The model of the servo controllers is Lenze 9300. Here the X9 and X10 connectors will be used as seen here:
 
-![Lenze X9-X10](/md_attachments/Lenze X9-X10.png)
+![Lenze X9-X10](md_attachments/Lenze X9-X10.png)
 Format: ![Alt Text](url)
 
 *Figure 1: Page 47 of lenze 9300 servodrive manual*
