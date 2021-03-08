@@ -1,5 +1,5 @@
 # Industrial 3D Printer
-*__Big 3D printer made with industrial parts from injection molding machine__*
+*__Big 3D printer made with industrial parts from an injection molding machine__*
 
 ### Introduction
 
