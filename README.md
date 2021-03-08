@@ -63,7 +63,11 @@ Here a Sony QX1 will be mounted on the printer to monitor the printing process. 
 
 ##### Camera commands so far to get live-view
 
-*Going to insert commands here*
+For saving the liveview this command have been used on MacOS for now:
+
+```bash
+ffmpeg -i http://192.168.122.1:8080/liveview/liveviewstream -vcodec flv -qscale 1 -an output.flv
+```
 
 
 
