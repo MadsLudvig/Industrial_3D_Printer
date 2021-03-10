@@ -79,13 +79,19 @@ Here as said before the extruder is going to be moved in the X-axis and the bott
 
 *Figure 5: Here is seen an example of how the axis will look*
 
-Here it should be noted that although the axis placements are correct on the image. The way the axisses are moved are not. This image is just to show axis placement. The Z-axis is not moving the extruder it should here be moving the bottom plate instead. The reason why the extruder is placed on the x-axis is because of its sheer size and weight. Here it will be advantagous only to move it from side to side to minimize movement of mass. To make the x-axis move the weight of the extruder, the long axis of the ATM CNC robot is going to be used. This is because this has lots of already built-in support and can therefore support the extruder with ease. It also has place for motor mounting, gear and gearrack for moving the axis, and a cable carrier. This i going to be very advantageus for running the material supply line for the extruder, motor cables for x and w axisses, and heating element wires for extruder. Everything will then be mounted on a steel frame made out of welded steel beams.
+Here it should be noted that although the axis placements are correct on the image. The way the axisses are moved are not. This image is just to show axis placement. The Z-axis is not moving the extruder it should here be moving the bottom plate instead. The reason why the extruder is placed on the x-axis is because of its sheer size and weight. Here it will be advantagous only to move it from side to side to minimize movement of mass. To make the x-axis move the weight of the extruder, the long axis of the ATM CNC robot is going to be used. This is because this has lots of already built-in support and can therefore support the extruder with ease. It also has place for motor mounting, gear and gearrack for moving the axis, and a cable carrier. This i going to be very advantageus for running the material supply line for the extruder, motor cables for x and w axisses, and heating element wires for extruder. Everything will then be mounted on a steel frame made out of welded steel beams. The material of the bottom plate is being researched, so the best material can be found. For now the material is aluminium, but that could also be replaced with borosilicate glass because of its hardness and temperature resistance
 
 
 
 ### Material Supply and Processing
 
 Here as said in the introduction a mini vacuum conveyer will be mounted on the extruder. Its material line, will then be run through the cable carrier and down to a material dryer which will be drying the material, so it has minimal moisture for fine prints. The mini vacuum conveyer in question is here the Conradt by Andertech as seen in this attachment: [CONRADT.pdf](md_attachments/CONRADT.pdf). The dryer in question is not found yet. The heating elements of the extruder will be powered by some sort of heat control elements. Preferably ones that can be controlled by software, so the temp can be controlled in the octoprint interface. But if this is out of the budget or simply not possible, conventional heat control elements will be used.
+
+
+
+### Temperature Control
+
+To control the temperature of the 6 heating bands on the extruder and the heating pads on the bottom plate, a PID controller will be made using a Raspberry Pi 3, 8 thermalcouple amplifiers and 8 solid-state relays. The outputs to the solid-state relays will be with PWM, so the temperature control is more precise. Then the Raspberry Pi 3 will run a webserver where temperature data can easily be requested and changes via POST and GET requests. This way the Raspberry Pi 4 running octoprint can request and change temperatures easily.
 
 
 
